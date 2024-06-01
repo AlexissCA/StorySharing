@@ -1,0 +1,88 @@
+:root {
+	--heart-path-small: path(
+		"M12.675 2.527A4.125 4.125 0 0 0 9.375 4.147a4.125 4.125 0 0 0 -3.3 -1.627 4.2 4.2 0 0 0 -4.185 4.185C1.883 9.188 3.083 10.65 4.05 11.828l0.21 0.255c1.14 1.41 4.688 3.938 4.838 4.05a0.525 0.525 0 0 0 0.578 0c0.15 -0.105 3.69 -2.64 4.838 -4.05l0.21 -0.255c0.968 -1.177 2.167 -2.64 2.16 -5.122a4.2 4.2 0 0 0 -4.185 -4.185"
+	);
+	--heart-path-small-2: path(
+		"M10.725 2.139a3.492 3.492 0 0 0 -2.792 1.37 3.492 3.492 0 0 0 -2.792 -1.377 3.554 3.554 0 0 0 -3.541 3.541c-0.005 2.101 1.009 3.338 1.828 4.335l0.178 0.215c0.964 1.194 3.966 3.332 4.094 3.426a0.449 0.449 0 0 0 0.489 0c0.127 -0.089 3.122 -2.234 4.094 -3.426l0.178 -0.215c0.82 -0.996 1.833 -2.234 1.828 -4.334a3.554 3.554 0 0 0 -3.541 -3.541"
+	);
+	--heart-path-small-3: path(
+		"M7.8 1.556a2.545 2.545 0 0 0 -2.031 0.996 2.545 2.545 0 0 0 -2.031 -1.001A2.585 2.585 0 0 0 1.164 4.126c-0.004 1.528 0.734 2.428 1.329 3.153l0.129 0.156c0.701 0.868 2.884 2.423 2.977 2.492a0.327 0.327 0 0 0 0.356 0c0.092 -0.065 2.271 -1.625 2.977 -2.492l0.129 -0.156c0.596 -0.724 1.333 -1.625 1.329 -3.152a2.585 2.585 0 0 0 -2.575 -2.575"
+	);
+	--heart-path: path(
+		"M21.45 4.279a7.018 7.018 0 0 0 -5.586 2.739 7.018 7.018 0 0 0 -5.586 -2.752 7.109 7.109 0 0 0 -7.079 7.082c-0.011 4.202 2.018 6.677 3.654 8.671l0.355 0.429c1.927 2.387 7.931 6.664 8.186 6.853a0.913 0.913 0 0 0 0.979 0c0.253 -0.179 6.246 -4.469 8.186 -6.853l0.355 -0.429c1.639 -1.991 3.666 -4.469 3.654 -8.668a7.109 7.109 0 0 0 -7.082 -7.082"
+	);
+	--heart-path-2: path(
+		"M19.5 3.89a6.375 6.375 0 0 0 -5.078 2.49 6.375 6.375 0 0 0 -5.078 -2.502 6.463 6.463 0 0 0 -6.435 6.438c-0.01 3.82 1.835 6.07 3.322 7.883l0.323 0.39c1.752 2.17 7.21 6.058 7.442 6.23a0.825 0.825 0 0 0 0.89 0c0.23 -0.163 5.678 -4.063 7.442 -6.23l0.323 -0.39c1.49 -1.81 3.333 -4.063 3.322 -7.88a6.463 6.463 0 0 0 -6.438 -6.438"
+	);
+	--heart-path-3: path(
+		"M17.55 3.501a5.746 5.746 0 0 0 -4.571 2.241 5.746 5.746 0 0 0 -4.571 -2.251 5.815 5.815 0 0 0 -5.792 5.795c-0.009 3.438 1.65 5.463 2.989 7.094l0.29 0.351c1.576 1.953 6.489 5.453 6.697 5.607a0.742 0.742 0 0 0 0.801 0c0.207 -0.146 5.111 -3.656 6.697 -5.607l0.29 -0.351c1.341 -1.629 2.999 -3.656 2.989 -7.092a5.815 5.815 0 0 0 -5.795 -5.795"
+	);
+
+	--mask-width: 0%;
+}
+
+.heart-icon {
+	position: relative;
+	width: 1.8rem;
+	height: 2rem;
+	margin-left: -0.2rem;
+	clip-path: var(--heart-path-small);
+	background: var(--color-1-light);
+	pointer-events: none;
+}
+@media only screen and (max-width: 480px) {
+	.heart-icon {
+		clip-path: var(--heart-path-small-2);
+	}
+}
+@media only screen and (max-width: 280px) {
+	.heart-icon {
+		clip-path: var(--heart-path-small-3);
+	}
+}
+
+.heart-icon-big {
+	width: 2.9rem;
+	height: 3.2rem;
+	clip-path: var(--heart-path);
+}
+@media only screen and (max-width: 480px) {
+	.heart-icon-big {
+		clip-path: var(--heart-path-2);
+	}
+}
+@media only screen and (max-width: 380px) {
+	.heart-icon-big {
+		clip-path: var(--heart-path-3);
+	}
+}
+@media only screen and (max-width: 280px) {
+	.heart-icon-big {
+		clip-path: var(--heart-path-small);
+	}
+}
+
+.heart-icon-1 {
+	background: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+}
+.heart-icon-2 {
+	background: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-3));
+}
+.heart-icon-3 {
+	background: linear-gradient(90deg, var(--gradient-color-3), var(--gradient-color-4));
+}
+.heart-icon-4 {
+	background: linear-gradient(90deg, var(--gradient-color-4), var(--gradient-color-5));
+}
+.heart-icon-5 {
+	background: linear-gradient(90deg, var(--gradient-color-5), var(--gradient-color-6));
+}
+
+.heart-icon-mask {
+	position: absolute;
+	right: 0;
+	width: 40%;
+	height: 100%;
+	pointer-events: none;
+	background: var(--color-1-light);
+}

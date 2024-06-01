@@ -1,0 +1,31 @@
+.site-nav {
+	position: absolute;
+	top: 1.7rem;
+	right: 27rem;
+	line-height: 1;
+}
+@media only screen and (max-width: 680px) {
+	.site-nav {
+		top: 4.9rem;
+		right: -1rem;
+		left: -1rem;
+		padding: 1.2rem 0 1.3rem 1rem;
+		background-color: var(--white-darker);
+		border-top: 1px solid var(--gray-opaque);
+		box-shadow: 0 0.4rem 0.4rem 0 var(--gray-opaque);
+	}
+}
+
+.site-nav a {
+	font-weight: 500;
+	margin: 0 0.6rem;
+	transition: color 0.4s ease-in-out;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+	color: var(--color-1);
+}
+.site-nav a:global(.active) {
+	color: var(--color-1);
+	border-bottom: 0.2rem solid var(--color-1);
+}

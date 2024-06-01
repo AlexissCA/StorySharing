@@ -1,0 +1,24 @@
+.stories {
+	margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+	.stories {
+		margin-bottom: 0rem;
+	}
+}
+.stories > *:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+@media only screen and (max-width: 810px) {
+	.stories > *:nth-child(2n) {
+		flex-direction: column;
+	}
+}
+.stories > *:nth-child(2n) .content {
+	padding-left: 1.2rem;
+}
+@media only screen and (max-width: 500px) {
+	.stories > *:nth-child(2n) .content {
+		padding-left: 1rem;
+	}
+}

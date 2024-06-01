@@ -1,0 +1,11 @@
+.auth-form {
+	padding: 0 2.4rem 0 2.4rem;
+}
+
+.auth-submit-btn {
+	margin-top: 2.6rem;
+}
+.auth-submit-btn:hover,
+.auth-submit-btn:focus {
+	box-shadow: 0 0.45rem 0.45rem 0 var(--gray-opaque-2);
+}

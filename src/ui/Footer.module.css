@@ -1,0 +1,21 @@
+footer {
+	width: 100%;
+	margin-top: 6rem;
+	padding: 1.2rem 1rem 1.5rem 1rem;
+	font-size: 1.3rem;
+	font-weight: 550;
+	color: var(--gray);
+	background-color: var(--white-darker);
+	box-shadow: 0 0 0.8rem 0 var(--gray-opaque-2);
+}
+@media only screen and (max-width: 600px) {
+	footer {
+		margin-top: 0;
+		box-shadow: 0 0 0.4rem 0 var(--gray-opaque);
+	}
+}
+
+.footer-noMargin {
+	margin-top: 0;
+	box-shadow: none;
+}

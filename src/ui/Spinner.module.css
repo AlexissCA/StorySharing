@@ -1,0 +1,68 @@
+/* strongly based on web finding */
+.spinner-container {
+	width: 100%;
+}
+@media only screen and (max-width: 480px) {
+	.spinner-container {
+		padding-bottom: 0.5rem;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.spinner-container {
+		padding-bottom: 1.5rem;
+	}
+}
+
+.spinner {
+	--radius: 3.5rem;
+	--color-set-1: var(--color-1) 96%, transparent;
+	--color-set-2: var(--white-darker-slight-opaque) 96%, transparent;
+	width: calc(2 * var(--radius));
+	height: calc(2 * var(--radius));
+	border-radius: 50%;
+	display: grid;
+	-webkit-mask: linear-gradient(#000 0 0);
+	margin: auto;
+	animation: spinner 1.3s infinite linear;
+}
+.spinner::before,
+.spinner::after {
+	content: "";
+	grid-area: 1/1;
+	width: 50%;
+	background: radial-gradient(farthest-side, var(--color-set-1)) calc(var(--radius) + 0.866 * var(--radius) - var(--radius))
+			calc(var(--radius) - 0.5 * var(--radius) - var(--radius)),
+		radial-gradient(farthest-side, var(--color-set-1)) calc(var(--radius) + 0.866 * var(--radius) - var(--radius))
+			calc(var(--radius) - 0.5 * var(--radius) - var(--radius)),
+		radial-gradient(farthest-side, var(--color-set-2)) calc(var(--radius) + 0.5 * var(--radius) - var(--radius))
+			calc(var(--radius) - 0.866 * var(--radius) - var(--radius)),
+		radial-gradient(farthest-side, var(--color-set-1)) 0 calc(-1 * var(--radius)),
+		radial-gradient(farthest-side, var(--color-set-2)) calc(var(--radius) - 0.5 * var(--radius) - var(--radius))
+			calc(var(--radius) - 0.866 * var(--radius) - var(--radius)),
+		radial-gradient(farthest-side, var(--color-set-1)) calc(var(--radius) - 0.866 * var(--radius) - var(--radius))
+			calc(var(--radius) - 0.5 * var(--radius) - var(--radius)),
+		radial-gradient(farthest-side, var(--color-set-2)) calc(-1 * var(--radius)) 0,
+		radial-gradient(farthest-side, var(--color-set-1)) calc(var(--radius) - 0.866 * var(--radius) - var(--radius))
+			calc(var(--radius) + 0.5 * var(--radius) - var(--radius));
+	background-size: calc(2 * var(--radius)) calc(2 * var(--radius));
+	background-repeat: no-repeat;
+}
+.spinner::after {
+	transform: rotate(180deg);
+	transform-origin: right;
+}
+
+@keyframes spinner {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.spinner-msg {
+	text-align: center;
+	font-weight: 600;
+	margin-top: 1rem;
+	font-family: var(--font-decorative);
+	font-size: 2.4rem;
+	color: var(--color-2);
+}

@@ -1,0 +1,11 @@
+.rate-box {
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+}
+
+.rate {
+	justify-content: flex-end;
+	width: 100%;
+	cursor: pointer;
+	transition: all 0.4s ease-out;
+}

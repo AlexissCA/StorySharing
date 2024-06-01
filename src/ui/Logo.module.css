@@ -1,0 +1,25 @@
+.logo {
+	padding: 5px 0;
+	font-family: var(--font-decorative);
+	font-size: 2.6rem;
+	font-weight: 500;
+	color: var(--color-1-lighter);
+	text-shadow: 0 3px 2px var(--gray-opaque);
+	transition: all 0.2s ease-in;
+}
+.logo:hover,
+.logo:focus {
+	color: var(--color-1-lighter-2);
+	text-shadow: 0 3px 2px var(--gray-opaque-2);
+}
+
+.logo-small {
+	font-family: var(--font-decorative);
+	font-size: 1.8rem;
+	line-height: 1;
+	transition: color 0.4s ease-in-out;
+}
+.logo-small:hover,
+.logo-small:focus {
+	color: var(--color-1);
+}

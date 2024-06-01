@@ -1,0 +1,28 @@
+.success-message {
+	text-align: center;
+	font-weight: 400;
+	font-size: 2rem;
+	color: var(--color-4-darker);
+}
+@media only screen and (max-width: 530px) {
+	.success-message {
+		padding-bottom: 1rem;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.success-message {
+		padding-bottom: 0.5rem;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.success-message {
+		font-size: 1.7rem;
+    padding-bottom: calc(0.2rem + 1vw);
+	}
+}
+@media only screen and (max-width: 380px) {
+	.success-message {
+		font-size: 1.7rem;
+    padding-bottom: calc(1rem + 1vw);
+	}
+}

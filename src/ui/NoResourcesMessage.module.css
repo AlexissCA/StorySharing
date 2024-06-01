@@ -1,0 +1,34 @@
+.no-resources-message {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 650;
+	color: var(--color-1);
+}
+@media only screen and (max-width: 1125px) {
+	.no-resources-message {
+		padding: 1rem 0;
+	}
+}
+@media only screen and (max-width: 530px) {
+	.no-resources-message {
+		padding-bottom: 1rem;
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.no-resources-message {
+		padding-bottom: 0.5rem;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.no-resources-message {
+		font-size: 2.2rem;
+		padding-bottom: calc(0.2rem + 1vw);
+	}
+}
+@media only screen and (max-width: 380px) {
+	.no-resources-message {
+		font-size: 1.7rem;
+		padding-bottom: calc(1rem + 1vw);
+	}
+}

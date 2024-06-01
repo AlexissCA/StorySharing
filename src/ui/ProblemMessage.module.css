@@ -1,0 +1,17 @@
+.not-found-message {
+	text-align: center;
+	font-size: 3.2rem;
+	font-weight: 700;
+	color: var(--warning-color);
+	margin: 5rem 0 7rem 0;
+}
+@media only screen and (max-width: 600px) {
+	.not-found-message {
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.not-found-message {
+		font-size: 2.2rem;
+	}
+}

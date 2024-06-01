@@ -1,0 +1,6 @@
+.confirm-message {
+	text-align: center;
+	padding: 11.3rem 0 4.2rem 0;
+	font-weight: 500;
+	color: var(--warning-color);
+}

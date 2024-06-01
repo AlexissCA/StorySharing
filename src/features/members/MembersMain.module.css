@@ -1,0 +1,138 @@
+.members-content {
+	padding: 1.5rem;
+	padding-bottom: 2rem;
+	background-color: var(--white-darker-opaque);
+}
+@media only screen and (max-width: 380px) {
+	.members-content {
+		padding: 0.8rem;
+	}
+}
+
+.member-card {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 2.5rem;
+	padding: 2rem;
+	background-color: var(--white-darker-3);
+	overflow: hidden;
+}
+@media only screen and (max-width: 1000px) {
+	.member-card {
+		padding: 1rem;
+	}
+}
+
+.member-card-content {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 3rem;
+	z-index: 1;
+	gap: 3rem;
+	background-color: var(--white-darker);
+	overflow: hidden;
+}
+@media only screen and (max-width: 1000px) {
+	.member-card-content {
+		padding: 2rem;
+		gap: 2rem;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.member-card-content {
+		flex-direction: column;
+		padding: 1.5rem;
+	}
+	.member-card-content::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100.2%;
+		height: 15rem;
+		z-index: -1;
+		content: "";
+		border-radius: 0 0 80% 30%/ 0 0 100% 20%;
+		background-color: var(--color-1-opaque);
+		box-shadow: 0 6px 0 0 var(--color-1);
+	}
+}
+
+.member-card-content-img {
+	width: 25rem;
+	height: 25rem;
+	flex-shrink: 0;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	border-width: 10px;
+	border-style: solid;
+}
+@media only screen and (max-width: 950px) {
+	.member-card-content-img {
+		width: 20rem;
+		height: 20rem;
+		border-radius: 0;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.member-card-content-img {
+		width: 15rem;
+		height: 15rem;
+		margin-top: 1.8rem;
+		align-self: flex-start;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.member-card-content-img {
+		width: 12rem;
+		height: 12rem;
+		margin-top: 0;
+		border-radius: 50%;
+		border-width: 7px;
+		border-style: solid;
+	}
+}
+
+.member-card-content-data {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+@media only screen and (max-width: 800px) {
+	.member-card-content-data {
+		margin-top: -5.2rem;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.member-card-content-data {
+		margin-top: 0;
+	}
+}
+
+.member-card-content-name {
+	margin: 1rem 0;
+	font-size: 2rem;
+	font-weight: 500;
+}
+@media only screen and (max-width: 800px) {
+	.member-card-content-name {
+		margin-left: 11.5rem;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.member-card-content-name {
+		margin-left: 0;
+	}
+}
+
+.member-card-content-description {
+	font-size: 1.4rem;
+}
+@media only screen and (max-width: 800px) {
+	.member-card-content-description {
+		margin-top: 1rem;
+	}
+}

@@ -1,0 +1,104 @@
+.share-story-form::before {
+	position: absolute;
+	top: -1rem;
+	left: 0;
+	width: 102%;
+	height: 21%;
+	z-index: -1;
+	content: "";
+	border-radius: 0 0 80% 20%/ 0 0 100% 20%;
+	background-color: var(--color-4-opaque);
+	box-shadow: 0 10px 0 0 var(--color-4);
+}
+@media only screen and (max-width: 800px) {
+	.share-story-form::before {
+		height: 18%;
+		width: 110%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.share-story-form::before {
+		height: 16%;
+	}
+}
+
+.share-story-form-title {
+	margin-bottom: 5.5rem;
+	text-align: center;
+	font-size: 4.2rem;
+	font-weight: 650;
+	color: var(--color-1-2);
+}
+@media only screen and (max-width: 800px) {
+	.share-story-form-title {
+		margin-bottom: 6rem;
+	}
+}
+
+.share-story-form label {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+@media only screen and (max-width: 800px) {
+	.share-story-form label {
+		font-weight: 400;
+	}
+}
+
+.share-story-form_checkbox-group {
+	margin: 1rem 0 2.5rem 0;
+}
+@media only screen and (max-width: 700px) {
+	.share-story-form_checkbox-group {
+		flex-direction: row-reverse;
+		margin-top: 3rem;
+	}
+}
+
+.share-story-img-group {
+	display: flex;
+	align-items: flex-end;
+	height: 3.5rem;
+	margin-top: 3rem;
+	gap: 0.8rem;
+}
+
+.share-story-img-input-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 11rem;
+	height: 100%;
+}
+.share-story-img-input-container input[type="file"] {
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+}
+
+.share-story-img-icon {
+	width: 3.5rem;
+	height: 100%;
+	margin-left: 1rem;
+	border-radius: 3px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.share-story-img-file-name {
+	padding-bottom: 0.5rem;
+	font-size: 1.4rem;
+	font-weight: 450;
+}
+
+.share-story-img-delete {
+	width: 1rem;
+	fill: var(--gray-lighter-3);
+	align-self: center;
+	padding-top: 0.9rem;
+	margin-left: 0.3rem;
+	transition: fill 0.3s ease-out;
+}
+.share-story-img-delete:hover {
+	fill: var(--color-1);
+}

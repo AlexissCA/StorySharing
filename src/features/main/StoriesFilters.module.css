@@ -1,0 +1,40 @@
+.stories-filters {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 2rem;
+	padding: 1.8rem 2rem 1rem 0;
+	font-size: 1.4rem;
+	line-height: 1;
+	gap: 2rem;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 10px solid var(--color-1);
+	box-shadow: 0 5px 0 0 var(--color-2);
+	background-color: var(--white-darker);
+}
+@media only screen and (max-width: 600px) {
+	.stories-filters {
+		justify-content: space-between;
+		padding-left: 2rem;
+	}
+}
+
+.filter-type {
+	display: flex;
+	gap: 0.8rem;
+}
+
+.option {
+	padding-bottom: 0.2rem;
+	cursor: pointer;
+	transition: color 0.4s ease-in-out;
+}
+.option:hover,
+.option:focus {
+	color: var(--color-1);
+}
+
+.option-chosen {
+	color: var(--color-1);
+	border-bottom: 0.2rem solid var(--color-1);
+	pointer-events: none;
+}

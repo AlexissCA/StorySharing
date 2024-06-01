@@ -1,0 +1,21 @@
+.navbar-user-group {
+	position: relative;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	gap: 0.8rem;
+}
+
+.navbar-username {
+	font-weight: 450;
+}
+
+@media only screen and (max-width: 360px) {
+	.navbar-username {
+		display: none;
+	}
+}
+
+.navbar-user-avatar {
+	cursor: pointer;
+}

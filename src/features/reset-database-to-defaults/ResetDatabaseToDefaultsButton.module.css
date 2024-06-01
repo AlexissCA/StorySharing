@@ -1,0 +1,15 @@
+.reload-btn {
+	position: fixed;
+	bottom: 5.45rem;
+	right: 4.7rem;
+	z-index: 10;
+	width: max-content;
+	height: max-content;
+	padding: 1.7rem 1.7rem 1.2rem 1.7rem;
+}
+
+.reload-btn-info {
+	padding-left: 0;
+	font-weight: 450;
+	color: var(--gray-lighter-3);
+}

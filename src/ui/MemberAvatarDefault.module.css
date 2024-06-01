@@ -1,0 +1,8 @@
+.photo-icon-default {
+	background: var(--white) !important;
+}
+
+.photo-icon-default path {
+	margin-top: 1rem;
+	pointer-events: none;
+}

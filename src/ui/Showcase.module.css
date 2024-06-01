@@ -1,0 +1,120 @@
+@supports (background-image: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash600.webp")) {
+	:root {
+		--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash600.webp");
+	}
+}
+@media only screen and (min-width: 600px), (min-width: 300px) and (min-resolution: 144dpi) {
+	:root {
+		--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash1200.jpg");
+	}
+	@supports (background-image: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash1200.webp")) {
+		:root {
+			--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash1200.webp");
+		}
+	}
+}
+@media only screen and (min-width: 1200px),
+	(min-width: 600px) and (min-resolution: 144dpi),
+	(min-width: 400px) and (min-resolution: 216dpi),
+	(min-width: 300px) and (min-resolution: 288dpi) {
+	:root {
+		--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash2000.jpg");
+	}
+	@supports (background-image: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash2000.webp")) {
+		:root {
+			--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash2000.webp");
+		}
+	}
+}
+@media only screen and (min-width: 2000px),
+	(min-width: 1000px) and (min-resolution: 144dpi),
+	(min-width: 666px) and (min-resolution: 216dpi),
+	(min-width: 500px) and (min-resolution: 288dpi) {
+	:root {
+		--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash3000.jpg");
+	}
+	@supports (background-image: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash3000.webp")) {
+		:root {
+			--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash3000.webp");
+		}
+	}
+}
+@media only screen and (min-width: 3000px),
+	(min-width: 1500px) and (min-resolution: 144dpi),
+	(min-width: 1000px) and (min-resolution: 216dpi),
+	(min-width: 750px) and (min-resolution: 288dpi) {
+	:root {
+		--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash.jpg");
+	}
+	@supports (background-image: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash.webp")) {
+		:root {
+			--showcase-bg-url: url("../../public/img/siora-photography-q5XDX1CadN4-unsplash.webp");
+		}
+	}
+}
+
+.showcase {
+	position: relative;
+	width: 100%;
+	height: 45vh;
+	min-height: 25rem;
+	margin-bottom: 4rem;
+	background: linear-gradient(165deg, var(--color-1) 0%, var(--color-1) 20%, var(--color-1-slight-opaque-2) 100%),
+		var(--showcase-bg-url) no-repeat center center/cover;
+	border-bottom: 1.5rem solid var(--color-2);
+	box-shadow: 0 0 0.8rem 0 var(--gray-opaque);
+}
+@media only screen and (max-width: 1000px) {
+	.showcase {
+		height: 30vh;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.showcase {
+		margin-bottom: 0;
+	}
+}
+
+.showcase-lower {
+	height: 35vh;
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 1000px) {
+	.showcase-lower {
+		height: 25vh;
+	}
+}
+
+.main-title {
+	position: absolute;
+	bottom: 4.5rem;
+	width: 100%;
+	text-align: center;
+	font-size: 4vw;
+	color: var(--color-4);
+}
+@media only screen and (max-width: 2200px) {
+	.main-title {
+		font-size: 4.5vw;
+	}
+}
+@media only screen and (max-width: 1800px) {
+	.main-title {
+		font-size: 5vw;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.main-title {
+		font-size: 6vw;
+	}
+}
+@media only screen and (max-width: 1350px) {
+	.main-title {
+		font-size: 7vw;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.main-title {
+		bottom: 3rem;
+	}
+}

@@ -1,0 +1,32 @@
+.error-message {
+	text-align: center;
+	font-weight: 400;
+	color: var(--warning-color);
+}
+@media only screen and (max-width: 1125px) {
+	.error-message {
+		padding: 1rem 0;
+	}
+}
+@media only screen and (max-width: 530px) {
+	.error-message {
+		padding-bottom: 1rem;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.error-message {
+		padding-bottom: 0.5rem;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.error-message {
+		font-size: 1.7rem;
+		padding-bottom: calc(0.2rem + 1vw);
+	}
+}
+@media only screen and (max-width: 380px) {
+	.error-message {
+		font-size: 1.7rem;
+		padding-bottom: calc(1rem + 1vw);
+	}
+}
